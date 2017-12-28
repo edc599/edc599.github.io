@@ -43,6 +43,7 @@
 			background-color: rgba(0, 0, 0, 0.3);
 			color: #fff;
 			float: left;
+			position: fixed;
 		}
 		nav {
 			width: 1200px;
