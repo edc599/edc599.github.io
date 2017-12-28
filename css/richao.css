@@ -1,3 +1,14 @@
+		@font-face {  /* 电脑中没有的字体，我们需要声明 */
+			font-family: 'icomoon';
+			src:  url('../fonts/icomoon.eot?7kkyc2');
+			src:  url('../fonts/icomoon.eot?7kkyc2#iefix') format('embedded-opentype'),
+			url('../fonts/icomoon.ttf?7kkyc2') format('truetype'),
+			url('../fonts/icomoon.woff?7kkyc2') format('woff'),
+			url('../fonts/icomoon.svg?7kkyc2#icomoon') format('svg');
+			font-weight: normal;
+			font-style: normal;
+		}
+		
 		/*初始化*/
 		* {
 			margin: 0;
@@ -70,15 +81,31 @@
 			padding: 0 20px;
 		}
 		
+		/*返回顶部*/
+		.gotop {
+			width: 60px;
+			height: 60px;
+			position: fixed;
+			top: 85%;
+			right: 30px;
+		}
+		.gotop span {
+			font-family: 'icomoon';
+			font-size: 60px;
+			color: rgba(0, 0, 0, 0.3);
+		}
+		
+		
 		/*banner部分*/
 		.banner {
 			height: 700px;
-			line-height: 600px;
+			line-height: 520px;
 			background-color: rgb(200, 200, 169);
 		}
 		.banner h1 {
-			width: 128px;
+			width: 200px;
 			color: #FFF;
+			font-size: 50px;
 			margin: 0 auto;
 		}
 		
