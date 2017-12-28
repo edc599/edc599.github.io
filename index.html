@@ -1,36 +1,111 @@
----
-layout: default
----
-
-<div class="home">
-
-  <ul class="post-list">
-    {% for post in paginator.posts %}
-      <li>
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-        <span class="post-meta">{% if post.author %}{{ post.author }}{% else %}{{ site.author }}{% endif %} | {{ post.date | date: "%b %-d, %Y" }}</span>
-        <div class="post-excerpt">{{ post.excerpt }}</div>
-        <div class="post-meta">{% if post.categories %}Filed under: <a href="{{ "/categories/" | prepend: site.baseurl }}#category-{{ post.categories.first | replace: ' ', '_' }}">{{ post.categories.first }}</a>{% for category in post.categories offset:1 %}, <a href="{{ "/categories/" | prepend: site.baseurl }}#category-{{ category | replace: ' ', '_' }}">{{ category }}</a>{% endfor %}{% endif %}{% if post.tags %}{% if post.categories %} | {% endif %}Tags: <a href="{{ "/tags/" | prepend: site.baseurl }}#tag-{{ post.tags.first | replace: ' ', '_' }}">{{ post.tags.first }}</a>{% for tag in post.tags offset:1 %}, <a href="{{ "/tags/" | prepend: site.baseurl }}#tag-{{ tag | replace: ' ', '_' }}">{{ tag }}</a>{% endfor %}{% endif %}</div>
-        <div class="read-more"><a href="{{ post.url | prepend: site.baseurl }}">Read more &raquo;</a></div>
-      </li>
-    {% endfor %}
-  </ul>
-  {% if paginator.total_pages > 1 %}
-  <div class="paginator">
-    {% if paginator.next_page %}
-      <a class="next_page" href="{{ paginator.next_page_path }}">← Older posts</a>
-    {% endif %}
-
-    {% if paginator.previous_page %}
-      {% if paginator.previous_page == 1 %}
-        <a class="prev_page" href="/">Newer posts →</a>
-      {% else %}
-        <a class="prev_page" href="{{ paginator.previous_page_path }}">Newer posts →</a>
-      {% endif %}
-    {% endif %}
-    <div style="clear:both"></div>
-  </div>
-  {% endif %}
-</div>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style>
+			/*初始化*/
+			* {
+				margin: 0;
+				padding: 0;
+				font-family: "微软雅黑";
+			}
+			a {
+				text-decoration: none;
+			}
+			ul {
+				list-style: none;
+			}
+			input {
+				border: 0;
+			}
+			body {
+				/*background-color: #f3f5f7;*/
+			}
+			.container {
+				width: 1200px;
+				margin: 0 auto;
+			}
+			.clearfix:before,
+			.clearfix:after {
+				display: table;
+				content: "";
+			}
+			.clearfix:after {
+				clear: both;
+			}
+			.clearfix {
+				*zoom: 1;
+			}
+			
+			/*头部*/
+			header {
+				width: 100%;
+				height: 60px;
+				line-height: 60px;
+				/*background-color: rgb(252, 157, 154);*/
+				/*background-color: rgb(87, 105, 60);*/
+				background-color: rgba(0, 0, 0, 0.3);
+				color: #fff;
+				float: left;
+			}
+			nav {
+				width: 1200px;
+				margin: 0 auto;
+				font-size: 18px;
+				font-weight: 800;
+			}
+			nav a {
+				color: #FFF;
+			}
+			nav a:hover {
+				color: #ecefe7;
+			}
+			.logo a {
+				height: 60px;
+				padding: 0 10px;
+				float: left;
+			}
+			.navbar {
+				float: right;
+			}
+			.navbar li {
+				float: left;
+				padding: 0 20px;
+			}
+			
+			/*banner部分*/
+			.banner {
+				height: 700px;
+				background: url(img/main.jpg) no-repeat scroll center center;
+				background-size: cover;
+			}
+		</style>
+	</head>
+	<body>
+		<!--头部-->
+		<header>
+			<nav>
+				<!--logo-->
+				<div class="logo">
+					<a href="index.html">edc599</a>
+				</div>
+				
+				<!--导航栏-->
+				<div class="navbar">
+					<ul>
+						<li><a href="index.html">首页</a></li>
+						<li><a href="#">工装</a></li>
+						<li><a href="#">关于本站</a></li>
+						<li><a href="#">联系我们</a></li>
+					</ul>
+				</div>	
+			</nav>
+		</header>
+		
+		<!--banner部分-->
+		<div class="banner">
+			
+		</div>
+	</body>
+</html>
