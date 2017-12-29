@@ -113,6 +113,11 @@
 			box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2);
 		}
 		
+		#uyan_frame {
+			width: 200x;
+			height: 200px;
+		}
+		
 		/*底部*/
 		footer {
 			height: 200px;
