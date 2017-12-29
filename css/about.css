@@ -94,6 +94,18 @@
 			width: 196px;
 			margin: 0 auto;
 		}
+		.main p {
+			width: 267px;
+			margin: 0 auto;
+			margin-top: 20px;
+			font-size: 18px;
+		}
+		.main a {
+			color: black;
+		}
+		.main a:hover {
+			color: rgb(20, 68, 106);
+		}
 
 		/*底部*/
 		footer {
