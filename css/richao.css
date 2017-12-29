@@ -123,6 +123,14 @@
 			margin: 0 auto;
 			margin-bottom: 100px;
 		}
+		a::selection,
+		p::selection,
+		h1::selection,
+		h2::selection,
+		h3::selection,
+		span::selection {
+			color: pink;
+		}
 		
 		/*底部*/
 		footer {

@@ -32,6 +32,14 @@
 		.clearfix {
 			*zoom: 1;
 		}
+		a::selection,
+		p::selection,
+		h1::selection,
+		h2::selection,
+		h3::selection,
+		span::selection {
+			color: pink;
+		}
 		
 		/*头部*/
 		header {

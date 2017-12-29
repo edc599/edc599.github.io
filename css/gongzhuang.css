@@ -32,6 +32,14 @@
 		.clearfix {
 			*zoom: 1;
 		}
+		a::selection,
+		p::selection,
+		h1::selection,
+		h2::selection,
+		h3::selection,
+		span::selection {
+			color: pink;
+		}
 		
 		/*头部*/
 		header {
@@ -70,6 +78,7 @@
 		
 		/*banner部分*/
 		.banner {
+			/*width: 100%;*/
 			height: 700px;
 			line-height: 520px;
 			background-color: rgb(182, 194, 154);

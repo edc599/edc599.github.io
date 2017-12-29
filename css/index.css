@@ -15,7 +15,6 @@
 		}
 		body {
 			background-color: #f3f5f7;
-			/*height: 3000px;*/
 		}
 		.container {
 			width: 1200px;
@@ -31,6 +30,14 @@
 		}
 		.clearfix {
 			*zoom: 1;
+		}
+		a::selection,
+		p::selection,
+		h1::selection,
+		h2::selection,
+		h3::selection,
+		span::selection {
+			color: pink;
 		}
 		
 		/*头部*/
@@ -70,6 +77,7 @@
 		
 		/*banner部分*/
 		.banner {
+			/*width: 100%;*/
 			height: 700px;
 			background: url(../img/banner.jpg) no-repeat scroll center center;
 			background-size: cover;
