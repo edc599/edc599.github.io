@@ -86,8 +86,9 @@
 			height: 120px;
 			background-color: #FFF;
 			margin-top: 50px;
-			box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+			/*box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);*/
 			padding-top: 1px;/*解决嵌套元素外边距合并问题*/
+			transition: all 0.5s;
 		}
 		.main li h2,
 		.main li p,
@@ -116,6 +117,7 @@
 			font-family: arial;
 		}
 		.main li:hover {
+			margin-top: 48px;
 			box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2);
 		}
 
@@ -123,12 +125,12 @@
 		footer {
 			height: 200px;
 			margin-top: 100px;
-			/*box-sizing: border-box;*/
 			padding-top: 1px;
 		}
 		.foot {
 			margin: 0 auto;
-			margin-top: 120px;
+			padding-top: 120px;
+			padding-bottom: 35px;
 		}
 		.foot h3 {
 			width: 100px;
